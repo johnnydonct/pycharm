@@ -9,4 +9,5 @@ total = 0
 # adicione o elemento atual (valor) ao total acumulado (total)
 for i in lista:
     total = total + i
+#Cria um loop de soma entre os elementos "i" da lista
 print(f"A soma dos elementos da lista é {total}")

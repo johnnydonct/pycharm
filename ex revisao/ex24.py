@@ -7,6 +7,7 @@ print("a lista 1 é:", l1)
 # dar o tamanho da segunda lista para depois encher ela
 m = int(input("Insira o tamanho da sua primeira lista: "))
 l2 = []
+#fazer o mesmo com a segunda lista
 for i in range (m):
     l2.append(int(input("Insira os elementos da lista 1: ")))
 print("A lista 2 é:", l2)
@@ -14,5 +15,6 @@ cont = 0
 for e1 in l1:
     for e2 in l2:
         if e1==e2:
+#essa parte vai ler os elementos nas duas listas e vai verificar quantos são iguais
             cont= cont+1
 print(f"As listas tem {cont} elementos iguais")

@@ -10,8 +10,10 @@ l2 = []
 for i in range (m):
     l2.append(int(input("Insira os elementos da lista 1: ")))
 print("A lista 2 é:", l2)
+# l3= l1+l2 é a concatenação das listas, como se fosse a união
 l3 = l1 + l2
-cl3 = list.sort(l3)
-dl3 = l3[::-1]
+list.sort(l3) #essa função deixa a lista em forma crescente 
+dl3 = l3[::-1] #essa função inverte a ordem dos elementos da lista, e juntando com a função anterior, deixa a lista decrescente
 print(f"A lista 3 crescente é {l3}")
 print(f"A lista 3 decrescente é {dl3}")
+

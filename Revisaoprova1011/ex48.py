@@ -1,20 +1,15 @@
-l = int(input("Entre com o numero de linhas: "))
-c = int(input("Entre com o numero de colunas: "))
-A = []
-for i in range(l):
-    en = []
-    for j in range(c):
-        en.append(int(input("Entre com o elemento da matriz: ")))
-A.append(en)
-def verificar_matriz(A):
-    if not A:
-        return (0, 0)
 
-    num_linhas = len(A)
-    num_colunas_esperado = len(A[0])
+def mtz(x,y):
+    if len(x)==len(y):
+        
 
-    if all(len(linha) == num_colunas_esperado for linha in A):
-        return (num_linhas, num_colunas_esperado)
-    else:
-        return ()
-verificar_matriz(A)
+n = int(input("dê o tamanho de sua primeira lista: "))
+l1 = []
+for i in range(n, n+1):
+    l1.append(int(input("Entre com os elementos de sua lista: ")))
+m = int(input("dê o tamanho de sua segunda lista: "))
+l2 = []
+for i in range(n, n+1):
+    l2.append(int(input("Entre com os elementos de sua lista: ")))
+print(l1)
+print(l2)

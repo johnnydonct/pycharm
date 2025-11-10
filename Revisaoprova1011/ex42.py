@@ -1,3 +1,5 @@
+#Incompleto, está dando errado
+
 def transpor_matriz(A):
     if not A:
         return []
@@ -25,3 +27,4 @@ for i in range(l):
 A.append(en)
 
 print(transpor_matriz(A))
+

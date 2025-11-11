@@ -1,15 +1,21 @@
+def lemtz():
+    M=[]
+    while True:
+        temp = input().split()
+        if temp == []:
+            return M
+        linha = []
+        for i in temp:
+            linha.append(int(i))
+        M.append(linha)
 
-def mtz(x,y):
-    if len(x)==len(y):
-        
+M = lemtz()
 
-n = int(input("dê o tamanho de sua primeira lista: "))
-l1 = []
-for i in range(n, n+1):
-    l1.append(int(input("Entre com os elementos de sua lista: ")))
-m = int(input("dê o tamanho de sua segunda lista: "))
-l2 = []
-for i in range(n, n+1):
-    l2.append(int(input("Entre com os elementos de sua lista: ")))
-print(l1)
-print(l2)
+def dim(M):
+    linhas = len(M)
+    colunas = len(M[0])
+    for i in range (1, linhas):
+        if len(M[i]) != colunas:
+            return()
+    print(linhas, colunas)
+dim(M)
